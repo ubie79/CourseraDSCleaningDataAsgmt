@@ -24,7 +24,17 @@ features       | fread      | UCI HAR Dataset/features.txt
 featuresWanted | grep       | mean, std of features
 measurements   | col naming | features
 
+#### Line 26 to 32 (The data (training) reading process)
 
+Similar to previous code section, in this part we will red the training data from Samsung.
+
+Labels          | Activity   | Location
+----------------|------------|------------------------------------
+train           | fread      | UCI HAR Dataset/train/X_train.txt
+train           | combine    | combine data with measurements table
+trainActivities | fread      | UCI HAR Dataset/train/Y_train.txt
+trainSubjects   | fread      | UCI HAR Dataset/train/subject_train.txt
+train           | cbind      | combining trainSubjects, trainActivities & train
 
 
 
