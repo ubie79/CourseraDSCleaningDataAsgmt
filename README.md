@@ -21,9 +21,10 @@ Labels         | Activity   | Location
 ---------------|------------|------------------------------------
 activityLabels | fread      | UCI HAR Dataset/activity_labels.txt
 features       | fread      | UCI HAR Dataset/features.txt
-featuresWanted | grep       | mean|std of features
+featuresWanted | grep       | mean, std of features
 measurements   | col naming | features
----------------|------------|------------------------------------
+
+
 
 
 
