@@ -36,5 +36,14 @@ trainActivities | fread      | UCI HAR Dataset/train/Y_train.txt
 trainSubjects   | fread      | UCI HAR Dataset/train/subject_train.txt
 train           | cbind      | combining trainSubjects, trainActivities & train
 
+#### Line 35 to 41 (The data (testing) reading process)
 
+In this section, testing data will be load and store in local machine.
 
+Labels          | Activity   | Location
+----------------|------------|------------------------------------
+test            | fread      | UCI HAR Dataset/test/X_test.txt
+tesy            | combine    | combine data with measurements table
+testActivities  | fread      | UCI HAR Dataset/test/Y_test.txt
+testSubjects    | fread      | UCI HAR Dataset/test/subject_test.txt
+test            | cbind      | combining testSubjects, testActivities & test
