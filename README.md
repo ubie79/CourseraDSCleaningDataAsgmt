@@ -47,3 +47,8 @@ tesy            | combine    | combine data with measurements table
 testActivities  | fread      | UCI HAR Dataset/test/Y_test.txt
 testSubjects    | fread      | UCI HAR Dataset/test/subject_test.txt
 test            | cbind      | combining testSubjects, testActivities & test
+
+#### Line 44 (Merging dataset)
+This part answering the assignment requirement - Merges the training and the test sets to create one data set.**Merges the training and the test sets to create one data set.**. The merging are between training and testing data from the sources. Previously they're loaded into the local machine.
+
+
