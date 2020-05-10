@@ -7,7 +7,7 @@
 
 #### Line 9 to 14 (The data extraction process)
 
-At first calling the *data.table* and *reshape2* packages. This will ensure later when the script is running it will called the package easily. The *data.table* will prepare the data and insert in the table, while *reshape2* illustrate the graph  of the cleaning data. This code will be put inside *packages* object.
+At first calling the *data.table* and *reshape2* packages. This will ensure later when the script is running it will called the package easily. The *data.table* will prepare the data and insert in the table, while *reshape2* will reduce the size  of the cleaning data. This code will be put inside *packages* object.
 
 Then, *sapply* will be implemented to limit the packages object.
 
@@ -49,6 +49,15 @@ testSubjects    | fread      | UCI HAR Dataset/test/subject_test.txt
 test            | cbind      | combining testSubjects, testActivities & test
 
 #### Line 44 (Merging dataset)
-This part answering the assignment requirement - Merges the training and the test sets to create one data set.**Merges the training and the test sets to create one data set.**. The merging are between training and testing data from the sources. Previously they're loaded into the local machine.
+
+This part answering the assignment requirement - **Merges the training and the test sets to create one data set.**. The merging are between training and testing data from the sources. Previously they're loaded into the local machine.
+
+#### Line 47 to 53 (Combining dataset)
+
+For this section all data will be combine to the respective label. This label and other's are descriptive, which is can be readable and understand. Them all data will be reshaping to reduce it size, and computer memory.
+
+#### Line 55 (Tidy dataset)
+
+This part answering the assignment requirement - **Creates a second, independent tidy data set with the average of each variable for each activity and each subject.** 
 
 
